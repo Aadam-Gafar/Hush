@@ -2,6 +2,11 @@
     width: 75px;
 }
 
+mat-toolbar {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: ghostwhite;
     text-align: center;
