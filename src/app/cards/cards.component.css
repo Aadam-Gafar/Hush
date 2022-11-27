@@ -17,11 +17,13 @@ mat-card {
 mat-card-header {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 img {
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 mat-card-content {
