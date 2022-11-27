@@ -31,40 +31,40 @@ mat-card-content {
     justify-content: center;
 }
 
-/* Mobile and tablet. */
+/* Mobile (two columns). */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     .row {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .column {
-        width: 40%;
+    .container {
+        width: 45%;
         
     }
 }
 
-/* Laptop and desktop. */
+/* Tablet (three columns). */
 @media only screen and (min-width: 768px) and (max-width: 1600px) {
     .row {
         padding-left: 10%;
         padding-right: 10%;
     }
 
-    .column {
-        width: 30%;
+    .container {
+        width: 25%;
         
     }
 }
 
-/* Ultra-wide setup. */
+/* PC (five columns). */
 @media only screen and (min-width: 1600px) {
     .row {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
-    .column {
-        width: 20%;
+    .container {
+        width: 17.5%;
     }
 }
