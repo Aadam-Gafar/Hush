@@ -1,18 +1,17 @@
 .row {
     display: flex;
-    padding-top:2.5%;
 }
 
 .column {
     width: 33%;
     display: flex;
     justify-content: center;
-    padding: 2.5%;
+    padding: 1%;
 }
 
 mat-card {
     background-color: ghostwhite;
-    width:fit-content;
+    width: fit-content;
 }
 
 mat-card-header {
@@ -32,4 +31,20 @@ mat-card-content {
 
 div {
     display: inline-block;
+}
+
+/* Mobile, tablet, and laptops. */
+@media only screen and (max-width: 1600px) {
+    .row {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Desktops and ultra-wide setups. */
+@media only screen and (min-width: 1600px) {
+    .row {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
 }
