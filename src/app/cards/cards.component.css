@@ -1,18 +1,13 @@
-.row {
-    display: flex;
-    padding-top:2.5%;
-}
-
 .column {
-    width: 33%;
     display: flex;
     justify-content: center;
-    padding: 2.5%;
+    padding: 1%;
+    float: left;
 }
 
 mat-card {
     background-color: ghostwhite;
-    width:fit-content;
+    width: fit-content;
 }
 
 mat-card-header {
@@ -30,6 +25,40 @@ mat-card-content {
     justify-content: center;
 }
 
-div {
-    display: inline-block;
+/* Mobile and tablet. */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .row {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .column {
+        width: 40%;
+        
+    }
+}
+
+/* Laptop and desktop. */
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+    .row {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .column {
+        width: 30%;
+        
+    }
+}
+
+/* Ultra-wide setup. */
+@media only screen and (min-width: 1600px) {
+    .row {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .column {
+        width: 20%;
+    }
 }
