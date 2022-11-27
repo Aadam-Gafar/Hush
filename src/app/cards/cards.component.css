@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+    padding-top:2.5%;
+}
+
+.column {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding: 2.5%;
+}
+
+mat-card {
+    background-color: ghostwhite;
+    width:fit-content;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: inline-block;
+}
