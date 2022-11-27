@@ -7,10 +7,10 @@ import { ChipsComponent } from './chips/chips.component';
 import { CardsComponent } from './cards/cards.component';
 
 // Angular Material imports
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatChipsModule } from '@angular/material/chips'
 import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider'
 
 @NgModule({
   declarations: [
@@ -20,10 +20,10 @@ import { MatCardModule } from '@angular/material/card';
   ],
   imports: [
     BrowserModule,
-    MatSlideToggleModule,
     MatToolbarModule,
     MatChipsModule,
-    MatCardModule
+    MatCardModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
