@@ -1,0 +1,12 @@
+.logo {
+    width: 75px;
+}
+
+footer {
+    background-color: ghostwhite;
+    text-align: center;
+    font-size: small;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

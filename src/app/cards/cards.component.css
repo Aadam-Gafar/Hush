@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+mat-card {
+    background-color: ghostwhite;
+    width:fit-content
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
