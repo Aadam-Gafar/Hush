@@ -7,35 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
   constructor() { }
-  ngOnInit(): void { }
-
-  volumeBird: any;
-  volumeRain: any;
-  volumeCoffee: any;
-  volumePark: any;
-  volumeFire: any;
-  volumeStorm: any;
-
+  ngOnInit(): void { // Silences all sound files
+    var audioTags = document.getElementsByTagName("audio");
+    for (var i = 0; i < audioTags.length; i++) {
+      audioTags[i].volume = 0;
+    }
+  }
+  
+  currentCard: any;
   changeVolume(event: any, cardName: string) {
     switch(cardName) {
       case 'bird':
-        this.volumeBird = event.value;
+        this.currentCard = document.getElementById("audioBird");
         break;
       case 'rain':
-        this.volumeRain = event.value;
+        this.currentCard = document.getElementById("audioRain");
         break;
       case 'coffee':
-        this.volumeCoffee = event.value;
+        this.currentCard = document.getElementById("audioCoffee");
         break;
       case 'park':
-        this.volumePark = event.value;
+        this.currentCard = document.getElementById("audioPark");
         break;
       case 'fire':
-        this.volumeFire = event.value;
+        this.currentCard = document.getElementById("audioFire");
         break;
       case 'storm':
-        this.volumeStorm = event.value;
+        this.currentCard = document.getElementById("audioStorm");
         break;
     }
+    this.currentCard.volume = event.value / 100;
   }
 }
