@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 // Component imports
 import { AppComponent } from './app.component';
-import { ChipsComponent } from './chips/chips.component';
 import { CardsComponent } from './cards/cards.component';
 
 // Angular Material imports
@@ -15,7 +14,6 @@ import { MatSliderModule } from '@angular/material/slider'
 @NgModule({
   declarations: [
     AppComponent,
-    ChipsComponent,
     CardsComponent
   ],
   imports: [
