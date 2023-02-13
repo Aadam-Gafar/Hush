@@ -2,42 +2,63 @@
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/bird.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'bird')"></mat-slider>
         </mat-card>
     </div>
 
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/rain.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'rain')"></mat-slider>
         </mat-card>
     </div>
 
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/coffee.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'coffee')"></mat-slider>
         </mat-card>
     </div>
 
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/park.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'park')"></mat-slider>
         </mat-card>
     </div>
 
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/fire.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'fire')"></mat-slider>
         </mat-card>
     </div>
 
     <div class="container">
         <mat-card>
             <img mat-card-image src="../assets/storm.png">
-            <mat-slide-toggle></mat-slide-toggle>
+            <mat-slider (input)="changeVolume($event, 'storm')"></mat-slider>
         </mat-card>
+    </div>
+
+    <div id="audio">
+        <audio id = "audioBird">
+            <source src="../../assets/bird.mp3">
+        </audio>
+        <audio id = "audioRain">
+            <source src="../../assets/rain.mp3">
+        </audio>
+        <audio id = "audioCoffee">
+            <source src="../../assets/coffee.mp3">
+        </audio>
+        <audio id = "audioPark">
+            <source src="../../assets/park.mp3">
+        </audio>
+        <audio id = "audioFire">
+            <source src="../../assets/fire.mp3">
+        </audio>
+        <audio id = "audioStorm">
+            <source src="../../assets/storm.mp3">
+        </audio>
     </div>
 </body>
