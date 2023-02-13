@@ -7,15 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
   constructor() { }
-  ngOnInit(): void { // Silences all sound files
-    var audioTags = document.getElementsByTagName("audio");
-    for (var i = 0; i < audioTags.length; i++) {
-      audioTags[i].volume = 0;
-    }
-  }
+  ngOnInit(): void { }
   
   currentCard: any;
   changeVolume(event: any, cardName: string) {
+    // Picks appropriate sound card
     switch(cardName) {
       case 'bird':
         this.currentCard = document.getElementById("audioBird");
@@ -36,6 +32,13 @@ export class CardsComponent implements OnInit {
         this.currentCard = document.getElementById("audioStorm");
         break;
     }
+
+    // Controls audio playback
     this.currentCard.volume = event.value / 100;
+    if (this.currentCard.volume <= 0) {
+      this.currentCard.pause();
+    } else {
+      this.currentCard.play();
+    }
   }
 }
